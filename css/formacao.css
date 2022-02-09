@@ -1,0 +1,181 @@
+.section_formacao {
+  background-color: #fff;
+}
+
+.formacao_container {
+  padding: 70px 20px;
+  display: grid;
+  grid-template-columns: 6fr 7fr;
+  margin: 0 auto;
+  max-width: 1200px;
+  gap: 120px;
+  margin-top: 90px;
+}
+
+.subtitulo_maior_dois {
+  font-size: 7rem;
+  word-break: break-all;
+  text-transform: uppercase;
+  font-family: "Poppins", sans serif;
+  line-height: 1.07;
+  max-width: 5ch;
+  color: #e1e2e4;
+  margin-left: 40px;
+  position: relative;
+}
+
+.subtitulo_maior_dois::before {
+  content: url("../img/boina_de_formatura.svg");
+  display: block;
+  position: absolute;
+  left: -28px;
+  top: -45px;
+}
+
+.formacao_texto {
+  font-family: "Fira Sans";
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #242833;
+  letter-spacing: 0.02em;
+  margin-bottom: 60px;
+  max-width: 58ch;
+}
+
+.formacao_texto strong {
+  color: #000;
+}
+
+.faculdade_lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 1;
+}
+
+.faculdade {
+  background-color: #282c33;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #747f93;
+  flex: 1;
+}
+
+.faculdade_tipo,
+.faculdade_ano,
+.faculdade_instituicao {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+}
+
+.faculdade_tipo {
+  display: flex;
+  flex-direction: column;
+  color: #71aaff;
+  font-weight: 500;
+}
+
+.faculdade_ano {
+  color: #e1e2e4;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.faculdade_curso {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  position: relative;
+  flex: 1;
+}
+
+.faculdade_curso::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 15px;
+  background: linear-gradient(89.97deg, #5096ff 0.03%, #2368cf 99.97%);
+  left: -14px;
+  top: 2px;
+}
+
+.faculdade_instituicao {
+  color: #e1e2e4;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .formacao_container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 40px;
+    margin-top: 20px;
+  }
+  .subtitulo_maior_dois {
+    max-width: none;
+    color: #282c33;
+    font-size: 2.5rem;
+  }
+  .formacao_texto {
+    max-width: none;
+    padding: 0px 40px;
+  }
+  .subtitulo_maior_dois::before {
+    content: url("../img/boina_de_formatura_menor.svg");
+    left: -13px;
+    top: -14px;
+  }
+}
+
+@media (max-width: 560px) {
+  .formacao_container {
+    justify-items: start;
+    gap: 30px;
+    padding: 50px 20px;
+  }
+  .subtitulo_maior_dois {
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-left: 0px;
+    padding: 0px 20px;
+  }
+  .formacao_texto {
+    padding: 0px 20px;
+    font-size: 1rem;
+    margin-bottom: 50px;
+  }
+  .subtitulo_maior_dois::before {
+    content: url("../img/boina_de_formatura_menor_segunda.svg");
+    left: 10px;
+    top: -11px;
+  }
+}
+
+@media (max-width: 430px) {
+  .faculdade_lista {
+    flex-direction: column;
+  }
+  .faculdade {
+    flex: none;
+  }
+}
+
+@media (max-width: 300px) {
+  .subtitulo_maior_dois {
+    font-size: 1.7rem;
+  }
+  .subtitulo_maior_dois::before {
+    display: none;
+  }
+}

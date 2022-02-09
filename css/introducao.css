@@ -1,0 +1,216 @@
+.introducao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 6fr 7fr;
+  align-items: center;
+  gap: 120px;
+}
+
+.titulo_primario {
+  font-family: "Fredoka One", display;
+  font-size: 2.25rem;
+  color: #fff;
+  letter-spacing: 0.07em;
+}
+
+.titulo_secundario {
+  font-family: "Fredoka One", display;
+  font-size: 3.3rem;
+  color: #fff;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+}
+
+.letra_diferente {
+  color: #71aaff;
+}
+
+.subtitulo {
+  color: #a6a9af;
+  font-family: "Fira Sans";
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  margin-top: 10px;
+}
+
+.titulo_funcao {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  position: relative;
+}
+
+.titulo_funcao::before {
+  content: url("../img/decorador_alto.svg");
+  position: absolute;
+  left: -30px;
+  top: 2px;
+}
+
+.titulo_funcao::after {
+  content: url("../img/decorador_baixo.svg");
+  position: relative;
+  top: 3px;
+  left: 8px;
+}
+
+/* Break Points */
+
+@media (max-width: 1010px) {
+  .titulo_primario {
+    font-size: 2rem;
+  }
+  .titulo_secundario {
+    font-size: 2.5rem;
+  }
+  .subtitulo_primario {
+    font-size: 0.9rem;
+  }
+  .titulo_funcao {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 930px) {
+  .introducao {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+  }
+  .titulo_funcao {
+    font-size: 2rem;
+  }
+  .titulo_funcao::before {
+    content: url("../img/decorador_alto_menor.svg");
+    position: absolute;
+    left: -20px;
+    top: 0px;
+  }
+  .titulo_funcao::after {
+    content: url("../img/decorador_baixo_menor.svg");
+    position: relative;
+    top: 2px;
+    left: 5px;
+  }
+  .titulo_primario {
+    font-size: 1.5rem;
+  }
+  .titulo_secundario {
+    font-size: 2.1rem;
+  }
+  .subtitulo {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .introducao {
+    gap: 50px;
+    justify-items: center;
+  }
+  .titulo_funcao {
+    font-size: 1.7rem;
+  }
+  .titulo_primario {
+    font-size: 1.2rem;
+  }
+  .titulo_secundario {
+    font-size: 1.8rem;
+  }
+  .subtitulo {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 10px;
+  }
+  .titulo_primario {
+    font-size: 1.5rem;
+  }
+  .titulo_secundario {
+    font-size: 2.3rem;
+  }
+  .subtitulo_primario {
+    font-size: 0.8rem;
+    position: relative;
+  }
+  .titulo_funcao {
+    font-size: 2rem;
+  }
+  .subtitulo_primario::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 260px;
+    background: linear-gradient(89.97deg, #5096ff 0.03%, #2368cf 99.97%);
+    top: 40px;
+  }
+  .titulo,
+  .subtitulo {
+    max-width: 700ch;
+  }
+  .subtitulo {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 350px) {
+  .titulo_primario {
+    font-size: 1.3rem;
+  }
+  .titulo_secundario {
+    font-size: 2rem;
+  }
+  .subtitulo_primario {
+    font-size: 0.7rem;
+  }
+  .titulo_funcao {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .subtitulo_primario::before {
+    width: 210px;
+    left: -2px;
+  }
+  .titulo_primario {
+    font-size: 1rem;
+  }
+  .titulo_secundario {
+    font-size: 1.8rem;
+  }
+  .subtitulo_primario {
+    font-size: 0.65rem;
+  }
+  .titulo_funcao {
+    font-size: 1.6rem;
+  }
+  .titulo_funcao::before {
+    content: url("../img/decorador_alto_menor_dois.svg");
+    left: -15px;
+    top: 1px;
+  }
+  .titulo_funcao::after {
+    content: url("../img/decorador_baixo_menor_dois.svg");
+    position: relative;
+    top: 3px;
+    left: 4px;
+  }
+}
