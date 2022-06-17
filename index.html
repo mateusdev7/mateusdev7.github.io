@@ -16,7 +16,7 @@
     <div class="introducao-bg">
         <header class="container" id="inicio">
             <nav aria-label="Navegação Primária - Menu">
-                <ul class="header-menu font-1-p-sb">
+                <ul class="header-menu font-1-p-sb" data-anime="200">
                     <li><a href="#sobre" class="destaque">Sobre</a></li>
                     <li><a href="#formacao" class="white2">Formação</a></li>
                     <li><a href="#projetos" class="white2">Projetos</a></li>
@@ -27,21 +27,21 @@
 
         <main>
             <div class="introducao container">
-                <div class="introducao-conteudo">
-                    <h3 class="font-2-f-sb white2 titulo-superior">Olá, Eu sou</h3>
-                    <h1 class="font-2-f-b white2">Mateus Paulo</h1>
-                    <h2 class="font-1-p-b brancototal"><span class="destaque">Estudante</span> Front End em<span class="destaque"> Desenvolvimento</span>.</h2>
-                    <p class="font-3-b-r black5">Convido você a conhecer um pouco sobre mim e dos meus projetos. Seja muito bem-vindo(a) e espero que goste do que lhe será apresentado.</p>
-                    <a class="botao font-1-p-sb" href="mateus-curriculo.pdf" download="CV - Mateus">DOWNLOAD CV <img src="./img/introducao/icon_download.svg" alt=""></a>
+                <div class="introducao-conteudo fadeInLeft" data-anime="400">
+                    <h3 class="font-2-f-sb white2 titulo-superior" data-anime="400">Olá, Eu sou</h3>
+                    <h1 class="font-2-f-b white2" data-anime="600">Mateus Paulo</h1>
+                    <h2 class="font-1-p-b brancototal" data-anime="800"><span class="destaque">Estudante</span> Front End em<span class="destaque"> Desenvolvimento</span>.</h2>
+                    <p class="font-3-b-r black5" data-anime="1000">Convido você a conhecer um pouco sobre mim e dos meus projetos. Seja muito bem-vindo(a) e espero que goste do que lhe será apresentado.</p>
+                    <a class="botao font-1-p-sb" href="mateus-curriculo.pdf" download="CV - Mateus" data-anime="1200">DOWNLOAD CV <img src="./img/introducao/icon_download.svg" alt=""></a>
                 </div>
                 <div>
                     <picture>
                         <source media="(max-width: 1000px)" srcset="./img/introducao/imagem_introducao_menor.svg">
-                        <img src="./img/introducao/imagem_introducao.svg" alt="">
+                        <img class="fadeInRight" src="./img/introducao/imagem_introducao.svg" alt="Imagem decorativa" data-anime="1200">
                     </picture>
                 </div>
                 <div>
-                    <ul class="introducao-redes">
+                    <ul class="introducao-redes fadeInRight" data-anime="1400">
                         <li>
                             <a href="https://www.facebook.com/profile.php?id=100072130397743" target="_blank"><img src="./img/introducao/facebook_icon.svg"></a>
                         </li>
@@ -61,12 +61,12 @@
     </div>
     <section id="sobre" aria-label="Sobre Mim">
         <div class="sobre container">
-            <div class="sobre-conteudo">
+            <div class="sobre-conteudo fadeInLeft" data-anime="1600">
                 <h3 class="font-2-f-sb black4"><img src="./img/habilidades/icon_habilidades.svg">Um pouco sobre mim...</h3>
                 <h1 class="font-2-f-b-2 black3">Quais são as minhas habilidades e projetos desenvolvidos?</h1>
                 <p class="font-3-b-r-2 black4 ">Sou estudante de <span class="font-3-b-sb black1">Ciência da Computação</span> pela universidade <span class="font-3-b-sb black1">FAESA</span>, situada em Vitória/ES. Sempre estou me desafiando para evoluir meus aprendizados, melhorando minhas interfaces com o <span class="font-3-b-sb black1">Figma</span> e treinando todos os conhecimentos que venho adquirindo através dos cursos intensivos.</p>
             </div>
-            <div class="sobre-item1">
+            <div class="sobre-item1 fadeInDown" data-anime="1800">
                 <picture>
                     <source media="(max-width: 1000px)" srcset="/img/habilidades/imagem01_menor.jpg">
                     <img src="./img/habilidades/imagem01.jpg">
@@ -80,7 +80,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="sobre-item2">
+            <div class="sobre-item2 fadeInUp" data-anime="2000">
                 <div class="habilidades">
                     <h3 class="font-1-p-sb brancototal">HABILIDADES</h3>
                     <ul class="lista-habilidades black6">
@@ -221,6 +221,7 @@
             </form>
         </article>
     </section>
+    <script src="./js/plugins/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
 </body>
-
 </html>

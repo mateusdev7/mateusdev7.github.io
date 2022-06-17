@@ -22,3 +22,6 @@
 /* Formulário */
 @import "./css/global/formulario/form-inicial.css";
 @import "./css/global/formulario/form.css";
+
+/* Animcação */
+@import "./css/global/css-componentes/animacao.css";
