@@ -1,0 +1,24 @@
+/* Global */
+@import "./css/global/resets.css";
+@import "./css/global/fontes.css";
+@import "./css/global/cores.css";
+
+/* Utilidades */
+@import "./css/global/utlidades/componentes.css";
+@import "./css/global/utlidades/menu.css";
+
+/* introducao */
+@import "./css/global/introducao/introducao.css";
+
+/* Sobre */
+@import "./css/global/sobre/sobre.css";
+
+/* Formação */
+@import "./css/global/formacao/formacao.css";
+
+/* Projetos */
+@import "./css/global/projetos/projetos.css";
+
+/* Formulário */
+@import "./css/global/formulario/form-inicial.css";
+@import "./css/global/formulario/form.css";

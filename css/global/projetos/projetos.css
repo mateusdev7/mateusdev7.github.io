@@ -1,0 +1,117 @@
+.projetos-bg {
+    background-color: var(--black1);
+}
+
+.container-projetos {
+    max-width: 1600px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projetos {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin: 0 auto;
+}
+
+.projetos-conteudo h1 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 80px;
+    gap: 16px;
+    justify-content: center;
+}
+
+.lista-projetos img[src^="img/projetos/imagem"]{
+    max-width: 300px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.lista-projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.lista-projetos p {
+    max-width: 30ch;
+}
+
+.lista-projetos li {
+    padding: 40px;
+    background: linear-gradient(131.37deg, #1A1B29, #050509);
+    box-shadow: 0px 2px 1px rgba(86, 88, 111, 0.25);
+    border-radius: 12px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.lista-projetos li:hover {
+    box-shadow:  0px 2px 4px 2px var(--destaque);
+    transition: 0.3s;
+}
+
+.lista-projetos h2 {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.lista-projetos h2::before {
+    content: "";
+    display: inline-block;
+    height: 8px;
+    width: 16px;
+    background: linear-gradient(180deg, #8F00FF 0%, #520093 100%);
+    border-radius: 50px;
+}
+
+.lista-projetos p {
+    margin-bottom: 40px;
+}
+
+.lista-projetos a+a {
+    margin-top: 20px;
+}
+
+@media (max-width: 1000px) {
+    .lista-projetos {
+        justify-content: center;
+        justify-items: center;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .projetos {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .projetos-conteudo h1 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+    .lista-projetos h2 {
+        font-size: 1.5rem;
+    }
+    .lista-projetos p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .projetos-conteudo h1 {
+        font-size: 1.5rem;
+    }
+}

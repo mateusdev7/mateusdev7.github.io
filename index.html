@@ -1,111 +1,226 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+    <!DOCTYPE html>
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
-    <title>Mateus - Desenvolvedor Web</title>
-    <meta name="description" content="Desenvolvedor Front End Jr. & UI/UX Designer, localizado em Vitória/ES">
+    <link rel="stylesheet" href="imports.css">
+    <link rel="shortcut icon" href="./icon_logo.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;700&family=Fredoka+One&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;600&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Portfólio Mateus</title>
 </head>
-
 <body>
-    <header class="header">
-        <img src="./img/marca.svg" alt="Nome do autor do Portifólio" width="189" height="28">
-        <nav>
-            <ul class="header-menu">
-                <li><a href="#experiencia">Experiências</a></li>
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#contato">Contato</a></li>
+    <div class="introducao-bg">
+        <header class="container" id="inicio">
+            <nav aria-label="Navegação Primária - Menu">
+                <ul class="header-menu font-1-p-sb">
+                    <li><a href="#sobre" class="destaque">Sobre</a></li>
+                    <li><a href="#formacao" class="white2">Formação</a></li>
+                    <li><a href="#projetos" class="white2">Projetos</a></li>
+                    <li><a href="#contato" class="white2">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="introducao container">
+                <div class="introducao-conteudo">
+                    <h3 class="font-2-f-sb white2 titulo-superior">Olá, Eu sou</h3>
+                    <h1 class="font-2-f-b white2">Mateus Paulo</h1>
+                    <h2 class="font-1-p-b brancototal"><span class="destaque">Estudante</span> Front End em<span class="destaque"> Desenvolvimento</span>.</h2>
+                    <p class="font-3-b-r black5">Convido você a conhecer um pouco sobre mim e dos meus projetos. Seja muito bem-vindo(a) e espero que goste do que lhe será apresentado.</p>
+                    <a class="botao font-1-p-sb" href="mateus-curriculo.pdf" download="CV - Mateus">DOWNLOAD CV <img src="./img/introducao/icon_download.svg" alt=""></a>
+                </div>
+                <div>
+                    <picture>
+                        <source media="(max-width: 1000px)" srcset="./img/introducao/imagem_introducao_menor.svg">
+                        <img src="./img/introducao/imagem_introducao.svg" alt="">
+                    </picture>
+                </div>
+                <div>
+                    <ul class="introducao-redes">
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100072130397743" target="_blank"><img src="./img/introducao/facebook_icon.svg"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/rmateus07/" target="_blank"><img src="./img/introducao/instagram_icon.svg"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/mateus-paulo-51aa9521a/" target="_blank"><img src="./img/introducao/linkedin_icon.svg"></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/mateusdev7" target="_blank"><img src="./img/introducao/github_icon.svg"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <section id="sobre" aria-label="Sobre Mim">
+        <div class="sobre container">
+            <div class="sobre-conteudo">
+                <h3 class="font-2-f-sb black4"><img src="./img/habilidades/icon_habilidades.svg">Um pouco sobre mim...</h3>
+                <h1 class="font-2-f-b-2 black3">Quais são as minhas habilidades e projetos desenvolvidos?</h1>
+                <p class="font-3-b-r-2 black4 ">Sou estudante de <span class="font-3-b-sb black1">Ciência da Computação</span> pela universidade <span class="font-3-b-sb black1">FAESA</span>, situada em Vitória/ES. Sempre estou me desafiando para evoluir meus aprendizados, melhorando minhas interfaces com o <span class="font-3-b-sb black1">Figma</span> e treinando todos os conhecimentos que venho adquirindo através dos cursos intensivos.</p>
+            </div>
+            <div class="sobre-item1">
+                <picture>
+                    <source media="(max-width: 1000px)" srcset="/img/habilidades/imagem01_menor.jpg">
+                    <img src="./img/habilidades/imagem01.jpg">
+                </picture>
+                <div class="projetos-concluidos">
+                    <span class="font-1-p-sb brancototal">3</span>
+                    <h3 class="font-1-p-sb brancototal">PROJETOS CONCLUIDOS</h3>
+                    <ul class="lista-projetos-concluidos black6">
+                        <li class="font-1-p-r">Prototipados no Figma</li>
+                        <li class="font-1-p-r">HTML5, CSS3 e Js</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sobre-item2">
+                <div class="habilidades">
+                    <h3 class="font-1-p-sb brancototal">HABILIDADES</h3>
+                    <ul class="lista-habilidades black6">
+                        <li class="font-1-p-r">Bom trabalho em equipe</li>
+                        <li class="font-1-p-r">Comunicação em grupo</li>
+                        <li class="font-1-p-r">Organização das atividades</li>
+                        <li class="font-1-p-r">Direcionamento</li>
+                    </ul>
+                </div>
+                <picture>
+                    <img src="./img/habilidades/imagem02.jpg">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <section id="formacao" aria-label="Minha formação" class="formacao-bg">
+        <div class="formacao container-formacao">
+            <div class="formacao-conteudo">
+                <h1 class="font-2-f-b brancototal">Graduação e Cursos</h1>
+                <p class="font-3-b-r-2 black5">Abaixo listei minha <span class="brancototal font-3-b-sb">graduação</span> que estou realizando e alguns cursos intensivos que já foram concluidos. Minha atual graduação está sendo em <span class="brancototal font-3-b-sb">Ciência da Computação</span>, com data final prevista para 08/2025</p>
+                <div>
+                    <ul class="lista-formacoes">
+                        <li>
+                            <h3 class="font-1-p-b-3 white2">Bacharelado</h3>
+                            <h4 class="font-1-p-m white2">2025</h4>
+                            <p class="font-1-p-b-3 white2">Ciência da <br>Computação</p>
+                            <span class="font-1-p-m white2">FAESA</span>
+                        </li>
+                        <li>
+                            <h3 class="font-1-p-b-3 white2">Curso</h3>
+                            <h4 class="font-1-p-m white2">2022</h4>
+                            <p class="font-1-p-b-3 white2">HTML5, CSS3 e <br>Javascript</p>
+                            <span class="font-1-p-m white2">Origamid</span>
+                        </li>
+                        <li>
+                            <h3 class="font-1-p-b-3 white2">Curso</h3>
+                            <h4 class="font-1-p-m white2">2022</h4>
+                            <p class="font-1-p-b-3 white2">Ui Design <br>UX Design</p>
+                            <span class="font-1-p-m white2">Origamid</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" aria-label="Meus Projetos" class="projetos-bg">
+        <div class="projetos container-projetos">
+            <div class="projetos-conteudo">
+                <h1 class="font-2-f-b brancototal"><img src="img/projetos/icon_projetos.svg">Projetos Desenvolvidos</h1>
+                <div>
+                    <ul class="lista-projetos">
+                        <li>
+                            <picture>
+                                <source media="(max-width: 800px)" srcset="./img/projetos/img_ded_menor.jpg">
+                                <img src="img/projetos/imagem_ded.jpg" alt="Projeto D&D">
+                            </picture>
+                            <h2 class="font-1-p-b white2">Projeto D&D</h2>
+                            <p class="font-3-b-r black5">Projeto feito durante a minha <span class="brancototal">graduação</span>. Fizemos, em grupo, um <span class="brancototal"> automatizador de fichas de D&D</span>, protótipado no Figma e feito com <span class="brancototal">HTML, CSS, Js e banco de dados</span>.</p>
+                            <a class="botao font-1-p-sb" href="https://mateusdev7.github.io/dungeonsanddragonsautomator" target="_blank">Acessar na WEB <img src="/img/projetos/icon_arrow.svg" alt=""></a>
+                            <a class="botao font-1-p-sb" href="https://www.figma.com/file/OQb5A58CJm5MAESkSPjbcr/projeto-integrador-computacional?node-id=397%3A31" target="_blank">Acessar no Figma <img src="/img/projetos/icon_arrow.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <picture>
+                                <source media="(max-width: 800px)" srcset="./img/projetos/imagem_portfolio_menor.jpg">
+                                <img src="img/projetos/imagem_portfolio.jpg" alt="Projeto Portfólio">
+                            </picture>
+                            <h2 class="font-1-p-b white2">Projeto Portfólio</h2>
+                            <p class="font-3-b-r black5">Projeto desenvolvido durante o curso de <span class="brancototal">HTML/CSS/Js para iniciantes de Origamid</span>. A ideia era fazer um Portfólio com o modelo apresentado, contudo, com <span class="brancototal">nossas características</span>. <br><br><span class="destaque font-1-p-b-3">AVISO: esse modelo já está descartado, pois, o modelo atual é que o você está utilizando.</span></p>
+                            <a class="botao font-1-p-sb" href="https://www.figma.com/file/htRziebgrb7LtftcywsZMs/projetos_pessoais?node-id=5%3A4" target="_blank">Acessar no Figma <img src="/img/projetos/icon_arrow.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <picture>
+                                <source media="(max-width: 800px)" srcset="./img/projetos/imagem_bikcraft_menor.jpg">
+                                <img src="img/projetos/imagem_bikcraft.jpg" alt="Projeto da Origamid Bikcraft">
+                            </picture>
+                            <h2 class="font-1-p-b white2">Projeto Bikcraft</h2>
+                            <p class="font-3-b-r black5">Mais um projeto feito durante o curso da <span class="brancototal">Orgamid</span> sobre <span class="brancototal">HTML/CSS/Js para iniciantes</span>. Nele, foi desenvolvido o protótipo no Figma e feito o Desenvolvimento Web do mesmo.</p>
+                            <a class="botao font-1-p-sb" href="https://mateusdev7.github.io/bikcraft/" target="_blank">Acessar na WEB <img src="/img/projetos/icon_arrow.svg" alt=""></a>
+                            <a class="botao font-1-p-sb" href="https://www.figma.com/file/bOwmA49vfAO6mRikGm9Yyl/Bikcraft-wireframe%2Fprototipo?node-id=17%3A39" target="_blank">Acessar no Figma <img src="/img/projetos/icon_arrow.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" aria-label="Entrar em Contato" class="form-maior">
+        <div class="contato container">
+            <h1 class="font-2-f-b black1">Entre em contato comigo</h1>
+            <h3 class="font2-f-sb black4">Segue abaixo os meios de contato</h3>
+            <ul class="lista-contato">
+                <li>
+                    <img src="/img/formulario/localizacao_icon.svg" width="15" height="20">
+                    <p class="font-3-b-r-2 black3">Vitória - Espírito Santo</p>
+                </li>
+                <a href="tel:+5527995249319">
+                    <li>
+                        <img src="/img/formulario/telefone_icon.svg" alt="" width="20" height="20">
+                        <p class="font-3-b-r-2 black3">+55 (027) 99524-9319</p>
+                    </li>
+                </a>
+                <a href="mailto:mateuspaulo1337@gmail.com">
+                    <li>
+                        <img src="./img/formulario/email_icon.svg" alt="" width="30" height="20">
+                        <p class="font-3-b-r-2 black3">mateuspaulo1337@gmail.com</p>
+                    </li>
+                </a>
             </ul>
-        </nav>
-    </header>
-    <main class="introducao">
-        <div class="parte_um">
-            <h2 class="titulo titulo_primario">Olá, Me Chamo</h1>
-                <h1 class="titulo titulo_secundario"><span class="letra_diferente">M</span>ateus<span class="letra_diferente"> P</span>aulo<span class="letra_diferente">.</span></h1>
-                <p class="subtitulo subtitulo_primario">Seja muito bem-vindo(a) ao meu portifólio.</p>
         </div>
-        <div class="parte_dois">
-            <h1 class="titulo_funcao">Desenvolvedor <br>Front End Jr. &<br>UI/UX Designer</h1>
-            <p class="subtitulo">Localizado em Espírito Santo - Vitória</p>
-        </div>
-    </main>
-    <section arial-label="Experiências" id="experiencia" class="section_experiencias">
-        <h2 class="subtitulo_maior">Experiências</h2>
-        <div>
-            <p class="experiencia_texto">Começando nesse gigantesco mundo do <strong>Front End</strong>, desenvolvendo ideias para aplicar fudamentos básicos de ensino e tentando a cada dia evoluir em desenvolvimento web, focando em tecnologias como <strong>HTML</strong>, <strong>CSS</strong>, <strong>UI/UX Design</strong>, <strong>JavaScript</strong> e <strong>React</strong>.</p>
-            <div class="empresa">
-                <span class="empresa_ano">2022</span>
-                <h3 class="empresa_titulo">IASES</h3>
-                <span class="empresa_titulo titulo_dois">Estágiario</span>
-                <p class="empresa_texto">Estágio envolvendo atividades de <strong>Técnico de Informática</strong> e <strong>redes,</strong> atendimento ao cliente via canal de chamados.</p>
-                <ul class="empresa_funcoes">
-                    <li>Redes</li>
-                    <li>Manutenção</li>
-                    <li>Atendimento tecnico</li>
-                </ul>
-            </div>
-            <div class="empresa">
-                <span class="empresa_ano">2021</span>
-                <h3 class="empresa_titulo">Modelo Mercedes-Benz</h3>
-                <span class="empresa_titulo titulo_dois">Front End - Grid e Flex</span>
-                <p class="empresa_texto">Protótipo simples, com a ideia de testar meus conhecimentos de <strong>CSS Grid</strong> e <strong>Flex.</strong></p>
-                <ul class="empresa_funcoes">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>UI Design</li>
-                    <li>UX Design</li>
-                </ul>
-            </div>
-        </div>
+
+        <article class="formulario-bg">
+            <form class="formulario container" action="form">
+                <div>
+                    <div class="campo-nome">
+                        <label for="nome" class="font-1-t-text-2">Seu nome</label>
+                        <input type="text" id="nome" name="nome">
+                    </div>
+        
+                    <div class="campo-email">
+                        <label for="email" class="font-1-t-text-2">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@email.com">
+                    </div>
+        
+                    <div class="campo-telefone">
+                        <label for="telefone" class="font-1-t-text-2">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(DDD) 00000-0000">
+                    </div>
+                </div>
+                <div>
+                    <div class="campo-textarea">
+                        <label for="textarea" class="font-1-t-text-2">Insira uma mensagem</label>
+                        <textarea name="textarea" id="textarea" placeholder="Sua mensagem"></textarea>
+                    </div>
+                </div>
+                <a class="botao-form font-1-p-sb">Enviar Mensagem<img src="./img/formulario/icon_email_button.svg" alt=""></a>
+            </form>
+        </article>
     </section>
-    <section aria-label="Formação" id="formacao" class="section_formacao">
-        <div class="formacao_container">
-            <h2 class="subtitulo_maior_dois">Formação</h2>
-            <div>
-                <p class="formacao_texto">
-                    Minha atual <strong>graduação</strong> está sendo em <strong>Ciência da Computação</strong> pela universidade FAESA, situada em Vitória/ES. Sempre me mantenho atualizado através de grupos de estudos e cursos intensivos on-line.
-                </p>
-                <ul class="faculdade_lista">
-                    <li class="faculdade">
-                        <span class="faculdade_tipo">Bacharel</span>
-                        <span class="faculdade_ano">2025</span>
-                        <h3 class="faculdade_curso">Ciência da <br> Computação</h3>
-                        <span class="faculdade_instituicao">FAESA</span>
-                    </li>
-                    <li class="faculdade">
-                        <span class="faculdade_tipo">Curso - iniciante</span>
-                        <span class="faculdade_ano">2022</span>
-                        <h3 class="faculdade_curso">UI Design <br>UX Design</h3>
-                        <span class="faculdade_instituicao">ORIGAMID</span>
-                    </li>
-                    <li class="faculdade">
-                        <span class="faculdade_tipo">Curso - Iniciante</span>
-                        <span class="faculdade_ano">2022</span>
-                        <h3 class="faculdade_curso">HTML, CSS, <br> JavaScript</h3>
-                        <span class="faculdade_instituicao">ORIGAMID</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <footer id="contato" class="section_contato">
-        <div>
-            <p class="contato_texto">Sou iniciante na área, contudo, caso tenha se interessado no meu perfil, entre em contato comigo através das redes e marcamos uma conversa. 😁</p>
-            <p class="contato_direitos">Mateus. Alguns direitos reservados.</p>
-        </div>
-        <div class="contato_imagem_container">
-            <a href="https://www.instagram.com/rmateus07/" target="_blank"><img src="./img/icon_instagram.svg" alt="logo do instagram" width="31" height="31"></a>
-            <a href="https://github.com/mateusdev7" target="_blank"><img src="./img/icon_github.svg" alt="logo do github" width="31" height="31"></a>
-            <a href="https://www.linkedin.com/in/mateus-paulo-51aa9521a/" target="_blank"><img src="./img/icon_linkedin.svg" alt="logo do linkedin" class="linkedin" width="31" height="31"></a>
-        </div>
-    </footer>
 </body>
 
 </html>

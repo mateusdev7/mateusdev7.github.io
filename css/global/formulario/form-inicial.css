@@ -1,0 +1,120 @@
+.contato {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    padding-bottom: 40px;
+    padding-top: 120px;
+}
+
+.contato h1 {
+    text-align: center;
+}
+
+.contato h3 {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.contato h3::before {
+    content: "";
+    display: inline-block;
+    width: 180px;
+    height: 2px;
+    background: linear-gradient(to right,#8f00ff, #520093);
+    margin-right: 8px;
+    border-radius: 10px;
+}
+
+.contato h3::after {
+    content: "";
+    display: inline-block;
+    width: 180px;
+    height: 2px;
+    background: linear-gradient(to left,#8f00ff, #520093);
+    margin-left: 8px;
+    border-radius: 10px;
+}
+
+.lista-contato {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.lista-contato li {
+    display: grid;
+    justify-items: center;
+    gap: 8px;
+    padding: 24px;
+}
+
+.lista-contato li:hover {
+    background-color: var(--brancototal);
+    border-radius: 12px;
+    box-shadow: 0px 1px 1px var(--destaque);
+    transition: 0.3s;
+}
+
+.lista-contato li p {
+    color: var(--black3);
+    width: max-content;
+}
+
+@media(max-width: 900px) {
+    .lista-contato {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .contato h1 {
+        font-size: 2.5rem;
+    }
+    .lista-contato li {
+      padding: 20px;
+    }
+    .contato h3::before,
+    .contato h3::after {
+      width: 54px;
+    }
+}
+  
+@media (max-width: 700px) {
+    .contato h3::before,
+    .contato h3::after {
+      width: 80px;
+    }
+    .lista-contato li:hover {
+      background-color: initial;
+      border-radius: none;
+      box-shadow: none;
+      transition: none;
+    }
+}
+  
+@media (max-width: 500px) {
+    .lista-contato {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    .contato h3::before,
+    .contato h3::after {
+      display: none;
+    }
+    .contato h3 {
+      margin-top: 16px;
+    }
+}
+  
+@media (max-width: 400px) {
+    .contato h3 {
+      margin-top: 8px;
+    }
+}

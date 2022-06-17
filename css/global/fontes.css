@@ -1,0 +1,63 @@
+.font-1-p-sb {
+  font: 600 1.125rem/1.33 "Poppins", sans-serif;
+}
+
+.font-1-p-b {
+  font: 700 2.25rem/1.33 "Poppins", sans-serif;
+}
+
+.font-1-p-b-2 {
+  font: 700 0.75rem/1.5 "Poppins", sans-serif;
+}
+
+.font-1-p-b-3 {
+  font: 700 0.875rem/1.14 "Poppins", sans-serif;
+}
+
+.font-1-p-r {
+  font: 400 0.75rem/1.5 "Poppins", sans-serif;
+}
+
+.font-1-p-m {
+  font: 500 0.875rem/1.14 "Poppins", sans-serif;
+}
+
+.font-2-f-sb {
+  font: 600 1.125rem/0.88 "Fraunces", serif;
+}
+
+.font-2-f-b {
+  font: 700 3rem/0.88 "Fraunces", serif;
+}
+
+.font-2-f-b-2 {
+  font: 700 3rem/1.25 "Fraunces", serif;
+}
+
+.font-3-b-r {
+  font: 400 1.125rem/1.33 "Blinker", sans-serif;
+}
+
+.font-3-b-r-2 {
+  font: 400 1.25rem/1.6 "Blinker", sans-serif;
+}
+
+.font-3-b-sb {
+  font: 600 1.25rem/1.6 "Blinker", sans-serif;
+}
+
+.font-3-b-sb-2 {
+  font: 400 1.125rem/1.33 "Blinker", sans-serif;
+}
+
+@media (max-width: 1000px) {
+  .font-1-p-sb {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .font-3-b-sb {
+    font-size: 1rem;
+  }
+}

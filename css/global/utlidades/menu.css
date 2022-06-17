@@ -1,0 +1,41 @@
+.introducao-bg {
+    background: #06070C;
+}
+
+.header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding-top: 32px;
+}
+
+.header-menu a {
+    padding: 16px 0px;
+    display: inline-block;
+}
+
+.header-menu a:hover {
+    color: var(--destaque);
+    transition: 0.6s
+}
+
+@media(max-width: 600px) {
+    .header-menu {
+        gap: 10px 40px;
+    }
+    .header-menu a {
+        background: var(--black2);
+        border-radius: 12px;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 450px) {
+    .header-menu {
+        gap: 8px;
+    }
+}
+
+

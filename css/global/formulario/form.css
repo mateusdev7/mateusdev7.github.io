@@ -1,0 +1,128 @@
+.formulario-bg {
+    padding: 60px;
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px 40px;
+    background: var(--brancototal);
+    box-shadow: 0px 1px 2px var(--destaque);
+    border-radius: 10px;
+    padding: 60px;
+    max-width: 1000px;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--black4);
+}
+
+.campo-nome, .campo-email, .campo-telefone {
+    margin-bottom: 20px;
+}
+
+.formulario textarea {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid var(--destaque);
+    background: #F1DFFF;
+    border-radius: 0px 10px 10px 0px;
+    font: 400 1rem/1.5 "Poppins", sans-serif;
+    color: var(--black4);
+    padding: 12px;
+    height: 240px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="tel"] {
+  padding: 12px 12px 12px 36px;
+  border-radius: 0px 10px 10px 0px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid var(--destaque);
+  background: #F1DFFF;
+  color: var(--black4);
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus,
+.formulario input[type="tel"]:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: var(--destaque);
+  background-color: #e9cdff;
+  box-shadow: 0 0 0 1px #7600d6;
+}
+
+.formulario .campo-nome {
+    position: relative;
+}
+  
+.formulario .campo-email {
+    position: relative;
+}
+  
+.formulario .campo-telefone {
+    position: relative;
+}
+  
+.formulario .campo-nome::before {
+    content: url("/img/formulario/form_profile_icon.svg");
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 36px;
+    left: 12px;
+}
+  
+.formulario .campo-email::before {
+    content: url("/img/formulario/form_email_icon.svg");
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 38px;
+    left: 12px;
+}
+  
+.formulario .campo-telefone::before {
+    content: url("/img/formulario/form_telefone_icon.svg");
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 36px;
+    left: 12px;
+}
+
+@media (max-width: 800px) {
+    .botao-form {
+      grid-column: 1;
+      place-self: start;
+    }
+    .formulario {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .formulario textarea {
+      height: 200px;
+      padding: 12px 36px 12px 36px;
+    }
+    .formulario .botao-form {
+      place-self: start;
+    }
+  }
+  
+@media (max-width: 500px) {
+    .formulario {
+      padding: 20px;
+      justify-items: center;
+    }
+}

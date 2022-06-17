@@ -1,0 +1,77 @@
+body {
+    background: var(--white2);
+}
+
+.container {
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botao {
+    display: flex;
+    padding: 16px;
+    color: var(--white2);
+    max-width: max-content;
+    border: 3px solid var(--destaque);
+    border-radius: 16px;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    /* border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #8F00FF, #520093); */
+}
+
+@media (max-width: 1000px) {
+    .botao {
+        padding: 12px;
+        font-size: 0.875rem;
+    }
+}
+
+.botao:hover {
+    color: var(--brancototal);
+    background: var(--destaque);
+    transition: 0.6s;
+}
+
+.botao-form {
+    display: flex;
+    padding: 12px;
+    color: var(--black4);
+    max-width: max-content;
+    border: 3px solid var(--destaque);
+    border-radius: 16px;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    place-self: end;
+    grid-column: 2;
+    /* border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #8F00FF, #520093); */
+}
+
+.botao-form:hover {
+    color: var(--brancototal);
+    background: var(--destaque);
+    transition: 0.6s;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    background: var(--black1);
+    border-left: 4px solid var(--black1);
+    border-right: 4px solid var(--black1);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--destaque);
+    border-radius: 16px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--black1);
+}

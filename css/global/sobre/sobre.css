@@ -1,0 +1,139 @@
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr 250px 250px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 120px;
+    padding-top: 120px;
+    gap: 40px;
+}
+
+.sobre-conteudo {
+    align-self: center;
+}
+
+.sobre-item1, .sobre-item2 {
+    align-self: start;
+}
+
+.sobre-conteudo h3{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.sobre-conteudo h1 {
+    margin-bottom: 20px;
+}
+
+.projetos-concluidos {
+    background-image: linear-gradient(to right, #1A1B29, #050509);
+    padding: 16px 12px 16px 12px;
+    border-radius: 10px;
+    margin-top: 32px;
+    text-align: center;
+    box-shadow: 0px 2px 1px rgba(86, 88, 111, 0.25);
+}
+
+.projetos-concluidos h3 {
+    margin-bottom: 16px;
+}
+
+.lista-projetos-concluidos li{
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.lista-projetos-concluidos li::before {
+    content: "";
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    margin-right: 4px;
+    background: var(--destaque);
+    border-radius: 50%;
+    align-self: center;
+}
+
+.habilidades {
+    background-image: linear-gradient(to right, #1A1B29, #050509);
+    padding: 16px 12px 16px 12px;
+    border-radius: 10px;
+    margin-bottom: 32px;
+    text-align: center;
+    box-shadow: 0px 2px 1px rgba(86, 88, 111, 0.25);
+}
+
+.habilidades h3 {
+    margin-bottom: 16px;
+}
+
+.lista-habilidades li{
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.lista-habilidades li::before {
+    content: "";
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    margin-right: 4px;
+    background: var(--destaque);
+    border-radius: 50%;
+    align-self: center;
+}
+
+@media (max-width: 1100px) {
+    .sobre {
+        gap: 20px;
+    }
+    .sobre-conteudo h3 {
+        font-size: 0.9rem;
+    }
+    .sobre-conteudo h1 {
+        font-size: 2rem;
+    }
+    .sobre-conteudo p {
+        font-size: 1rem;
+        max-width: 40ch;
+    }
+}
+
+@media (max-width: 900px) {
+    .sobre {
+        grid-template-columns: 1fr;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .sobre-conteudo p {
+        max-width: 100%;
+    }
+    .sobre-conteudo h1 {
+        max-width: 100%;
+        text-align: center;
+    }
+    .sobre-conteudo h3 {
+        justify-content: center;
+    }
+    .sobre-item1 img, .sobre-item2 img{
+        display: none;
+    }
+    .sobre-item1, .sobre-item2 {
+        width: 300px;
+        align-self: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .sobre-conteudo h1 {
+        font-size: 1.5rem;
+    }
+}
