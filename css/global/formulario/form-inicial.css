@@ -63,6 +63,15 @@
     width: max-content;
 }
 
+@media (max-width: 600px) {
+  .contato h3::before, .contato h3::after {
+    content: none;
+  }
+  .contato {
+    padding-top: 80px;
+  }
+}
+
 @media(max-width: 900px) {
     .lista-contato {
         display: flex;

@@ -2,6 +2,10 @@ body {
     background: var(--white2);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     max-width: 1200px;
     padding-left: 20px;

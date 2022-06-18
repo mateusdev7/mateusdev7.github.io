@@ -85,6 +85,13 @@
     margin-top: 20px;
 }
 
+@media (max-width: 1300px) {
+    .lista-projetos {
+        justify-content: center;
+        
+    }
+}
+
 @media (max-width: 1000px) {
     .lista-projetos {
         justify-content: center;

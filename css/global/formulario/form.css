@@ -1,5 +1,6 @@
 .formulario-bg {
     padding: 60px;
+    padding-bottom: 120px;
 }
 
 .formulario {
@@ -119,10 +120,13 @@
       place-self: start;
     }
   }
-  
-@media (max-width: 500px) {
-    .formulario {
-      padding: 20px;
-      justify-items: center;
-    }
+
+@media (max-width: 600px) {
+  .formulario {
+    padding: 20px;
+    justify-items: center;
+  }
+  .formulario-bg {
+    padding: 20px;
+  }
 }

@@ -77,7 +77,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
     .introducao img:nth-child(2){
-        margin-left: 50px;
+        margin-left: 10px;
     }
     .introducao-conteudo h3 {
         font-size: 1rem;
@@ -124,6 +124,7 @@
         justify-content: center;
         align-items: center;
         justify-items: center;
+        padding-top: 60px;
     }
     .introducao img:nth-child(2){
         display: none;
