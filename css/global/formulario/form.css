@@ -35,6 +35,7 @@
     color: var(--black4);
     padding: 12px;
     height: 240px;
+    resize: none;
 }
 
 .formulario input[type="text"],
@@ -102,6 +103,10 @@
     left: 12px;
 }
 
+.formulario a:hover svg path {
+  fill: white;
+}
+
 @media (max-width: 800px) {
     .botao-form {
       grid-column: 1;
@@ -128,5 +133,6 @@
   }
   .formulario-bg {
     padding: 20px;
+    padding-bottom: 120px;
   }
 }

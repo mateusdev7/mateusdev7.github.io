@@ -2,13 +2,20 @@
     background: #06070C;
 }
 
+.menu-bg {
+    position: fixed;
+    min-width: 100%;
+    justify-content: center;
+    background: var(--black2);
+    z-index: 999;
+}
+
 .header-menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     gap: 60px;
-    padding-top: 32px;
+    padding: 16px;
 }
 
 .header-menu a {
@@ -23,12 +30,15 @@
 
 @media(max-width: 600px) {
     .header-menu {
-        gap: 10px 40px;
+        gap: 10px 16px;
     }
     .header-menu a {
-        background: var(--black2);
+        background: var(--black3);
         border-radius: 12px;
-        padding: 8px 12px;
+        padding: 8px 16px;
+    }
+    .header-menu li:nth-child(n+2) a:hover {
+        color: var(--white2 );
     }
 }
 

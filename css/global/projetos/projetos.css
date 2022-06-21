@@ -25,8 +25,9 @@
     flex-wrap: nowrap;
     align-items: center;
     margin-bottom: 80px;
-    gap: 16px;
+    gap: 4px;
     justify-content: center;
+    text-align: center;
 }
 
 .lista-projetos img[src^="img/projetos/imagem"]{
@@ -85,10 +86,17 @@
     margin-top: 20px;
 }
 
+.lista-projetos-concluidos li {
+    font-size: 0.9rem;
+}
+
+.lista-habilidades li {
+    font-size: 0.9rem;
+}
+
 @media (max-width: 1300px) {
     .lista-projetos {
         justify-content: center;
-        
     }
 }
 
@@ -101,8 +109,14 @@
 }
 
 @media (max-width: 800px) {
+    .lista-projetos {
+        gap: 20px;
+    }
+    .lista-projetos li {
+        padding: 20px;
+    }
     .projetos {
-        padding-top: 80px;
+        padding-top: 160px;
         padding-bottom: 80px;
     }
     .projetos-conteudo h1 {

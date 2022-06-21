@@ -106,7 +106,7 @@
 @media (max-width: 900px) {
     .sobre {
         grid-template-columns: 1fr;
-        padding-top: 60px;
+        padding-top: 120px;
         padding-bottom: 60px;
         justify-content: center;
         text-align: center;

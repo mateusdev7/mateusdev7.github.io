@@ -19,8 +19,8 @@
     grid-template-columns: 600px 1fr;
     align-items: center;
     justify-content: center;
-    padding-bottom: 80px;
-    padding-top: 80px;
+    padding-bottom: 120px;
+    padding-top: 120px;
     gap: 60px;
 }
 
@@ -46,7 +46,7 @@
     width: 50%;
     background-image: linear-gradient(to right, #8F00FF, #520093);
     position: absolute;
-    top: -12px;
+    top: -20px;
 }
 
 .formacao-conteudo h1:first-child::after {
@@ -94,12 +94,12 @@
 
 .lista-formacoes li:hover::before {
     content: none;
-    transform: 0.3s;
+    transition: 0.3s;
 }
 
 .lista-formacoes li:hover {
     box-shadow: 0px 0px 10px var(--destaque);
-    transform: 0.3s;
+    transition: 0.3s;
 }
 
 .lista-formacoes h3 {
@@ -129,6 +129,7 @@
         text-align: center;
         align-items: center;
         justify-items: center;
+        padding-top: 160px;
     }
     .formacao-bg {
         background-image: url("/img/formacao/bg_formacao_total.jpg");
@@ -153,3 +154,13 @@
     }
 }
 
+@media(max-width: 500px) {
+    .formacao-conteudo h1:first-child::before {
+        width: 100%;
+        transition: 0.3s;
+    }
+    .formacao-conteudo h1:first-child::after {
+        width: 100%;
+        transition: 0.3s;
+    }
+}

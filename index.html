@@ -13,52 +13,53 @@
     <title>Portfólio Mateus</title>
 </head>
 <body>
-    <div class="introducao-bg">
-        <header class="container" id="inicio">
+    <div class="menu-bg">
+        <header id="inicio">
             <nav aria-label="Navegação Primária - Menu">
                 <ul class="header-menu font-1-p-sb" data-anime="200">
-                    <li><a href="#sobre" class="destaque">Sobre</a></li>
+                    <li><a href="#inicio" class="destaque">Inicio</a></li>
+                    <li><a href="#sobre" class="white2">Sobre</a></li>
                     <li><a href="#formacao" class="white2">Formação</a></li>
                     <li><a href="#projetos" class="white2">Projetos</a></li>
                     <li><a href="#contato" class="white2">Contato</a></li>
                 </ul>
             </nav>
         </header>
-
-        <main>
-            <div class="introducao container">
-                <div class="introducao-conteudo fadeInLeft" data-anime="400">
-                    <h3 class="font-2-f-sb white2 titulo-superior" data-anime="400">Olá, Eu sou</h3>
-                    <h1 class="font-2-f-b white2" data-anime="600">Mateus Paulo</h1>
-                    <h2 class="font-1-p-b brancototal" data-anime="800"><span class="destaque">Estudante</span> Front End em<span class="destaque"> Desenvolvimento</span>.</h2>
-                    <p class="font-3-b-r black5" data-anime="1000">Convido você a conhecer um pouco sobre mim e dos meus projetos. Seja muito bem-vindo(a) e espero que goste do que lhe será apresentado.</p>
-                    <a class="botao font-1-p-sb" href="mateus-curriculo.pdf" download="CV - Mateus" data-anime="1200">DOWNLOAD CV <img src="./img/introducao/icon_download.svg" alt=""></a>
-                </div>
-                <div>
-                    <picture>
-                        <source media="(max-width: 1000px)" srcset="./img/introducao/imagem_introducao_menor.svg">
-                        <img class="fadeInRight" src="./img/introducao/imagem_introducao.svg" alt="Imagem decorativa" data-anime="1200">
-                    </picture>
-                </div>
-                <div>
-                    <ul class="introducao-redes fadeInRight" data-anime="1400">
-                        <li>
-                            <a href="https://www.facebook.com/profile.php?id=100072130397743" target="_blank"><img src="./img/introducao/facebook_icon.svg"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/rmateus07/" target="_blank"><img src="./img/introducao/instagram_icon.svg"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/mateus-paulo-51aa9521a/" target="_blank"><img src="./img/introducao/linkedin_icon.svg"></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/mateusdev7" target="_blank"><img src="./img/introducao/github_icon.svg"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </main>
     </div>
+    
+    <main class="introducao-bg">
+        <div class="introducao container">
+            <div class="introducao-conteudo fadeInLeft" data-anime="400">
+                <h3 class="font-2-f-sb black5 titulo-superior" data-anime="400">Olá, Eu sou</h3>
+                <h1 class="font-2-f-b white2" data-anime="600">Mateus Paulo</h1>
+                <h2 class="font-1-p-b brancototal" data-anime="800"><span class="destaque">Estudante</span> Front End em<span class="destaque"> Desenvolvimento</span>.</h2>
+                <p class="font-3-b-r black5" data-anime="1000">Convido você a conhecer um pouco sobre mim e dos meus projetos. Seja muito bem-vindo(a) e espero que goste do que lhe será apresentado.</p>
+                <a class="botao font-1-p-sb" href="mateus-curriculo.pdf" download="CV - Mateus" data-anime="1200">DOWNLOAD CV <img src="./img/introducao/icon_download.svg" alt=""></a>
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width: 1000px)" srcset="./img/introducao/imagem_introducao_menor.svg">
+                    <img class="fadeInRight" src="./img/introducao/imagem_introducao.svg" alt="Imagem decorativa" data-anime="1200">
+                </picture>
+            </div>
+            <div>
+                <ul class="introducao-redes fadeInRight" data-anime="1400">
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100072130397743" target="_blank"><img src="./img/introducao/facebook_icon.svg"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/rmateus07/" target="_blank"><img src="./img/introducao/instagram_icon.svg"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/mateus-paulo-51aa9521a/" target="_blank"><img src="./img/introducao/linkedin_icon.svg"></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mateusdev7" target="_blank"><img src="./img/introducao/github_icon.svg"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
     <section id="sobre" aria-label="Sobre Mim">
         <div class="sobre container">
             <div class="sobre-conteudo fadeInLeft" data-anime="1600">
@@ -136,13 +137,14 @@
                     <ul class="lista-projetos">
                         <li>
                             <picture>
-                                <source media="(max-width: 800px)" srcset="./img/projetos/img_ded_menor.jpg">
+                                <source media="(max-width: 800px)" srcset="./img/projetos/imagem_ded_menor.jpg">
                                 <img src="img/projetos/imagem_ded.jpg" alt="Projeto D&D">
                             </picture>
                             <h2 class="font-1-p-b white2">Projeto D&D</h2>
                             <p class="font-3-b-r black5">Projeto feito durante a minha <span class="brancototal">graduação</span>. Fizemos, em grupo, um <span class="brancototal"> automatizador de fichas de D&D</span>, protótipado no Figma e feito com <span class="brancototal">HTML, CSS, Js e banco de dados</span>.</p>
                             <a class="botao font-1-p-sb" href="https://mateusdev7.github.io/dungeonsanddragonsautomator" target="_blank">Acessar na WEB <img src="/img/projetos/icon_arrow.svg" alt=""></a>
                             <a class="botao font-1-p-sb" href="https://www.figma.com/file/OQb5A58CJm5MAESkSPjbcr/projeto-integrador-computacional?node-id=397%3A31" target="_blank">Acessar no Figma <img src="/img/projetos/icon_arrow.svg" alt=""></a>
+                            <a class="botao font-1-p-sb" href="https://github.com/mateusdev7/dungeonsanddragonsautomator" target="_blank">Acessar na GitHub <img src="/img/projetos/icon_arrow.svg" alt=""></a>
                         </li>
                         <li>
                             <picture>
@@ -152,6 +154,7 @@
                             <h2 class="font-1-p-b white2">Projeto Portfólio</h2>
                             <p class="font-3-b-r black5">Projeto desenvolvido durante o curso de <span class="brancototal">HTML/CSS/Js para iniciantes de Origamid</span>. A ideia era fazer um Portfólio com o modelo apresentado, contudo, com <span class="brancototal">nossas características</span>. <br><br><span class="destaque font-1-p-b-3">AVISO: esse modelo já está descartado, pois, o modelo atual é o que você está utilizando.</span></p>
                             <a class="botao font-1-p-sb" href="https://www.figma.com/file/htRziebgrb7LtftcywsZMs/projetos_pessoais?node-id=5%3A4" target="_blank">Acessar no Figma <img src="/img/projetos/icon_arrow.svg" alt=""></a>
+                            <a class="botao font-1-p-sb" href="https://github.com/mateusdev7/mateusdev7.github.io" target="_blank">Acessar na GitHub <img src="/img/projetos/icon_arrow.svg" alt=""></a>
                         </li>
                         <li>
                             <picture>
@@ -162,6 +165,7 @@
                             <p class="font-3-b-r black5">Mais um projeto feito durante o curso da <span class="brancototal">Orgamid</span> sobre <span class="brancototal">HTML/CSS/Js para iniciantes</span>. Nele, foi desenvolvido o protótipo no Figma e feito o Desenvolvimento Web do mesmo.</p>
                             <a class="botao font-1-p-sb" href="https://mateusdev7.github.io/bikcraft/" target="_blank">Acessar na WEB <img src="/img/projetos/icon_arrow.svg" alt=""></a>
                             <a class="botao font-1-p-sb" href="https://www.figma.com/file/bOwmA49vfAO6mRikGm9Yyl/Bikcraft-wireframe%2Fprototipo?node-id=17%3A39" target="_blank">Acessar no Figma <img src="/img/projetos/icon_arrow.svg" alt=""></a>
+                            <a class="botao font-1-p-sb" href="https://github.com/mateusdev7/bikcraft" target="_blank">Acessar na GitHub <img src="/img/projetos/icon_arrow.svg" alt=""></a>
                         </li>
                     </ul>
                 </div>
@@ -172,7 +176,7 @@
     <section id="contato" aria-label="Entrar em Contato" class="form-maior">
         <div class="contato container">
             <h1 class="font-2-f-b black1">Entre em contato comigo</h1>
-            <h3 class="font2-f-sb black4">Segue abaixo os meios de contato</h3>
+            <h3 class="font-2-f-sb black4">Segue abaixo os meios de contato</h3>
             <ul class="lista-contato">
                 <li>
                     <img src="/img/formulario/localizacao_icon.svg" width="15" height="20">
@@ -217,7 +221,7 @@
                         <textarea name="textarea" id="textarea" placeholder="Sua mensagem"></textarea>
                     </div>
                 </div>
-                <a class="botao-form font-1-p-sb">Enviar Mensagem<img src="./img/formulario/icon_email_button.svg" alt=""></a>
+                <a class="botao-form font-1-p-sb">Enviar Mensagem<svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 0A15.005 15.005 0 1 1 4.395 4.395 14.944 14.944 0 0 1 15 0ZM7.866 19.382l4.854-4.865-4.854-3.958v8.823Zm5.388-4.43L8.25 19.967h13.457l-4.78-5.017-1.578 1.345a.346.346 0 0 1-.44 0l-1.655-1.35v.005Zm4.195-.445 4.685 4.914v-8.906l-4.685 3.992ZM8.3 10.032l6.811 5.556 6.531-5.556H8.301Zm15.967-4.307a13.115 13.115 0 1 0 3.842 9.277 13.076 13.076 0 0 0-3.842-9.277Z" fill="#56586F"/></svg></a>
             </form>
         </article>
     </section>
