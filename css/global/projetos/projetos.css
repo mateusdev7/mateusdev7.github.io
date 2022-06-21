@@ -58,7 +58,7 @@
 }
 
 .lista-projetos li:hover {
-    box-shadow:  0px 2px 4px 2px var(--destaque);
+    box-shadow: 0px 0px 10px var(--destaque);
     transition: 0.3s;
 }
 
