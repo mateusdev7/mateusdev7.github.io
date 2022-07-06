@@ -82,7 +82,7 @@
         font-size: 2.5rem;
     }
     .lista-contato li {
-      padding: 20px;
+      padding: 10px;
     }
     .contato h3::before,
     .contato h3::after {

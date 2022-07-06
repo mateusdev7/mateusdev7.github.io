@@ -137,3 +137,14 @@
     padding-bottom: 120px;
   }
 }
+
+@media (max-width: 400px) {
+  .formulario input[type="text"],
+  .formulario input[type="email"],
+  .formulario input[type="tel"] {
+    font: 400 .8rem/1.5 "Poppins", sans-serif;
+  }
+  .formulario textarea {
+    font: 400 .8rem/1.5 "Poppins", sans-serif;
+}
+}
