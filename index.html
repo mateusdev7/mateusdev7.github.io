@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="teste">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="imports.css">
     <link rel="shortcut icon" href="./icon_logo.ico" type="image/x-icon">
+    <script>document.documentElement.className += " js"</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;600&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
     <div class="menu-bg">
         <header>
             <nav aria-label="Navegação Primária - Menu">
-                <ul class="header-menu font-1-p-sb" data-anime="200">
+                <ul class="header-menu font-1-p-sb">
                     <li><a href="#inicio" class="destaque">Inicio</a></li>
                     <li><a href="#sobre" class="white2">Sobre</a></li>
                     <li><a href="#formacao" class="white2">Formação</a></li>
@@ -28,7 +29,7 @@
     </div>
     
     <main class="introducao-bg" id="inicio">
-        <div class="introducao container">
+        <div class="introducao container js-scroll">
             <div class="introducao-conteudo fadeInLeft" data-anime="400">
                 <h3 class="font-2-f-sb black5 titulo-superior" data-anime="400">Olá, Eu sou</h3>
                 <h1 class="font-2-f-b white2" data-anime="600">Mateus Paulo</h1>
@@ -68,14 +69,15 @@
             </div>
         </div>
     </main>
+
     <section id="sobre" aria-label="Sobre Mim">
-        <div class="sobre container">
-            <div class="sobre-conteudo fadeInLeft" data-anime="1600">
+        <div class="sobre container js-scroll">
+            <div class="sobre-conteudo">
                 <h3 class="font-2-f-sb black4"><img src="./img/habilidades/icon_habilidades.svg">Um pouco sobre mim...</h3>
                 <h1 class="font-2-f-b-2 black3">Quais são as minhas habilidades e projetos desenvolvidos?</h1>
                 <p class="font-3-b-r-2 black4 ">Sou estudante de <span class="font-3-b-sb black1">Ciência da Computação</span> pela universidade <span class="font-3-b-sb black1">FAESA</span>, situada em Vitória/ES. Sempre estou me desafiando para evoluir meus aprendizados, melhorando minhas interfaces com o <span class="font-3-b-sb black1">Figma</span> e treinando todos os conhecimentos que venho adquirindo através dos cursos intensivos.</p>
             </div>
-            <div class="sobre-item1 fadeInDown" data-anime="1800">
+            <div class="sobre-item1">
                 <picture>
                     <source media="(max-width: 1000px)" srcset="/img/habilidades/imagem01_menor.jpg">
                     <img src="./img/habilidades/imagem01.jpg">
@@ -89,7 +91,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="sobre-item2 fadeInUp" data-anime="2000">
+            <div class="sobre-item2">
                 <div class="habilidades">
                     <h3 class="font-1-p-sb brancototal">HABILIDADES</h3>
                     <ul class="lista-habilidades black6">
@@ -104,7 +106,7 @@
                 </picture>
             </div>
         </div>
-        <div class="skills container fadeInLeft" data-anime="2400">
+        <div class="skills container js-scroll">
             <h1 class="font-2-f-b-2 black3">Skills</h1>
             <div class="skills-imagens">
                 <svg width="131" height="131" viewBox="0 0 131 131" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -140,7 +142,7 @@
     </section>
 
     <section id="formacao" aria-label="Minha formação" class="formacao-bg">
-        <div class="formacao container-formacao">
+        <div class="formacao container-formacao js-scroll">
             <div class="formacao-conteudo">
                 <h1 class="font-2-f-b brancototal">Graduação e Cursos</h1>
                 <p class="font-3-b-r-2 black5">Abaixo listei minha <span class="brancototal font-3-b-sb">graduação</span> que estou realizando e alguns cursos intensivos que já foram concluidos. Minha atual graduação está sendo em <span class="brancototal font-3-b-sb">Ciência da Computação</span>, com data final prevista para 08/2025</p>
@@ -171,7 +173,7 @@
     </section>
 
     <section id="projetos" aria-label="Meus Projetos" class="projetos-bg">
-        <div class="projetos container-projetos">
+        <div class="projetos container-projetos js-scroll">
             <div class="projetos-conteudo">
                 <h1 class="font-2-f-b brancototal"><img src="img/projetos/icon_projetos.svg">Projetos Desenvolvidos</h1>
                 <div>
@@ -215,7 +217,7 @@
     </section>
 
     <section id="contato" aria-label="Entrar em Contato" class="form-maior">
-        <div class="contato container">
+        <div class="contato container js-scroll">
             <h1 class="font-2-f-b black1">Entre em contato comigo</h1>
             <h3 class="font-2-f-sb black4">Segue abaixo os meios de contato</h3>
             <ul class="lista-contato">
@@ -238,7 +240,7 @@
             </ul>
         </div>
 
-        <article class="formulario-bg">
+        <article class="formulario-bg js-scroll">
             <form class="formulario container" action="form">
                 <div>
                     <div class="campo-nome">
@@ -266,7 +268,7 @@
             </form>
         </article>
     </section>
-    <script src="./js/plugins/simple-anime.js"></script>
+    
     <script src="./js/script.js"></script>
 </body>
 </html>
