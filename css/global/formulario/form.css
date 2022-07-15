@@ -8,7 +8,7 @@
     grid-template-columns: repeat(2,1fr);
     gap: 20px 40px;
     background: var(--brancototal);
-    box-shadow: 0px 1px 2px var(--destaque);
+    box-shadow: 0px 0px 3px var(--destaque);
     border-radius: 10px;
     padding: 60px;
     max-width: 1000px;
