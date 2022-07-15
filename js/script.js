@@ -16,3 +16,33 @@ function initAnimarScroll() {
     }
 }
 initAnimarScroll();
+
+const projetos = document.querySelectorAll('.js-projetos picture')
+const modalImagens = document.querySelectorAll('.modal')
+const fechar = document.querySelectorAll('.close');
+
+function activeModal(index) {
+    modalImagens.forEach((imagem) => {
+        imagem.classList.remove('ativo');
+    })
+    modalImagens[index].classList.add('ativo');
+}
+
+function fecharModal() {
+    modalImagens.forEach((imagem) => {
+        imagem.classList.remove('ativo')
+    })
+}
+
+fechar.forEach((close) => {
+    close.addEventListener('click', fecharModal);
+})
+
+projetos.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        activeModal(index);
+    })
+})
+
+console.log(modalImagens)
+console.log(projetos)
