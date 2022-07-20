@@ -1,1 +1,1 @@
-Portfólio Pessoal no qual utilizei HTML5 e CSS3. Futuramente irei adicionar o javascript e a integração do formulário para enviar e-mails
+Portfólio Pessoal no qual utilizei HTML5, CSS3 e JavaScript. Futuramente irei adicionar a integração do formulário para o envio de e-mails.
